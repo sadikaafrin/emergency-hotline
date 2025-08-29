@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- daisy ul cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- daisy ui cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- tailwind css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awosome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="p-5">
+    <header>
+      <nav
+        class="w-full border-2 border-blue-900 flex justify-between items-center py-5 px-3 max-w-full mx-auto"
+      >
+        <div class="flex gap-3 border-2 border-red-800">
+          <div>
+            <img src="./assets/logo.png" alt="" class="h-10 w-10" />
+          </div>
+          <h1>Emergency Service</h1>
+        </div>
+        <div class="flex gap-5 border-2 border-green-800">
+          <div class="flex items-center bg-[#41ff6b1a]">
+            <!-- <h1>0<i class="fa-solid fa-heart"></i></h1> -->
+            <button
+              type="button"
+              class="btn w-full bg-[#41ff6b1a] rounded-[50px] p-4"
+            >
+              <span id="btn-hart">0</span><i class="fa-solid fa-heart"></i>
+            </button>
+          </div>
+          <div class="flex items-center w-full">
+            <button id="coin-icon"
+              type="button"
+              class="btn w-full bg-[#41ff6b1a] rounded-[50px] p-4"
+            >
+              <span id="coin-amount">100</span
+              ><img src="./assets/coin.png" alt="" class="h-6 w-6" />
+            </button>
+          </div>
+          <div class="flex items-center w-full">
+            <button 
+              type="button"
+              class="btn w-full bg-[#00a63e] rounded-[50px] p-4 text-white"
+            >
+              <span id="copy-btn">0</span>Copy
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="bg-[#f5fff6]">
+      <!-- banner section -->
+      <section
+        class="banner-background h-[240px] border-2 border-e-red-900 p-3"
+      >
+        <div class="flex items-center justify-center">
+          <img src="./assets/logo.png" alt="" class="h-[92px]" />
+        </div>
+        <div
+          class="flex justify-center items-center text-white text-[40px] mt-3"
+        >
+          <h1 class="font-bold">Emergency Service Directory</h1>
+        </div>
+        <div class="flex justify-center items-center text-white text-xl">
+          <p class="font-semibold">
+            Government Emergency Services at Your Fingertip – A Project by
+            Government of the People’s Republic of Bangladesh
+          </p>
+        </div>
+      </section>
+      <!-- main card section -->
+      <section class="w-11/12 mx-auto grid grid-cols-12 gap-5">
+        <section
+          id="all-box"
+          class="col-span-9 border-2 border-black grid grid-cols-1 md:grid-cols-3 gap-4"
+        >
+          <div class="bg-base-100 shadow-sm mt-4 p-5 border-2 border-green-300">
+            <div class="flex justify-between items-center">
+              <figure>
+                <img
+                  src="./assets/emergency.png"
+                  alt="Shoes"
+                  class="bg-[#ffe3e2] rounded-2xl"
+                />
+              </figure>
+              <i class="fa-regular fa-heart text-2xl hart-btn"></i>
+            </div>
+            <div class="mt-4">
+              <h2
+                class="card-title text-2xl text-[color:var(--Dark,rgba(17,17,17,1))]"
+              >
+                N
+              </h2>
+              <h2 class="title text-gray-400">Naq</h2>
+              <br />
+              <h2
+                class="text-to-copy card-title text-4xl text-[color:var(--Dark,rgba(17,17,17,1))]"
+              >
+                9
+              </h2>
+              <div class="">
+                <h1
+                  class="bg-gray-200 rounded-full w-9 h-14 flex items-center justify-center text-gray-600 text-sm font-medium"
+                >
+                  A
+                </h1>
+              </div>
+            </div>
+            <div class="flex justify-between items-center mt-4 gap-3">
+              <button
+                class="btn-copy w-1/2 btn btn-xl rounded-xl text-white bg-gray-200"
+              >
+                <i class="fa-solid fa-copy "></i>Copy
+              </button>
+              <button
+                class="call-btn w-1/2 btn btn-xl rounded-xl text-white bg-green-400"
+              >
+                <i class="fa-solid fa-phone"></i>Call
+              </button>
+            </div>
+          </div>
+          <div class="bg-base-100 shadow-sm mt-4 p-5 border-2 border-green-300">
+            <div class="flex justify-between items-center">
+              <figure>
+                <img
+                  src="./assets/emergency.png"
+                  alt="Shoes"
+                  class="bg-[#ffe3e2] rounded-2xl"
+                />
+              </figure>
+              <i class="fa-regular fa-heart text-2xl hart-btn"></i>
+            </div>
+            <div class="mt-4">
+              <h2
+                class="card-title text-2xl text-[color:var(--Dark,rgba(17,17,17,1))]"
+              >
+                N
+              </h2>
+              <h2 class="title text-gray-400">Np</h2>
+              <br />
+              <h2
+                class="text-to-copy card-title text-4xl text-[color:var(--Dark,rgba(17,17,17,1))]"
+              >
+                9
+              </h2>
+              <div class="">
+                <h1
+                  class="bg-gray-200 rounded-full w-9 h-14 flex items-center justify-center text-gray-600 text-sm font-medium"
+                >
+                  A
+                </h1>
+              </div>
+            </div>
+            <div class="flex justify-between items-center mt-4 gap-3">
+              <button
+                class="btn-copy w-1/2 btn btn-xl rounded-xl text-white bg-gray-200"
+              >
+                <i class="fa-solid fa-copy"></i>Copy
+              </button>
+              <button
+                class="call-btn w-1/2 btn btn-xl rounded-xl text-white bg-green-400"
+              >
+                <i class="fa-solid fa-phone"></i>Call
+              </button>
+            </div>
+          </div>
+          <div class="bg-base-100 shadow-sm mt-4 p-5 border-2 border-green-300">
+            <div class="flex justify-between items-center">
+              <figure>
+                <img
+                  src="./assets/emergency.png"
+                  alt="Shoes"
+                  class="bg-[#ffe3e2] rounded-2xl"
+                />
+              </figure>
+              <i class="fa-regular fa-heart text-2xl hart-btn"></i>
+            </div>
+            <div class="mt-4">
+              <h2
+                class="card-title text-2xl text-[color:var(--Dark,rgba(17,17,17,1))]"
+              >
+                Fire Service Number
+              </h2>
+              <h2 class="title text-gray-400">Fire Service</h2>
+              <br />
+              <h2
+                class="text-to-copy card-title text-4xl text-[color:var(--Dark,rgba(17,17,17,1))]"
+              >
+                999
+              </h2>
+              <div class="">
+                <h1
+                  class="bg-gray-200 rounded-full w-9 h-14 flex items-center justify-center text-gray-600 text-sm font-medium"
+                >
+                  A
+                </h1>
+              </div>
+            </div>
+            <div class="flex justify-between items-center mt-4 gap-3">
+              <button
+                class="btn-copy w-1/2 btn btn-xl rounded-xl text-white bg-gray-200"
+              >
+                <i class="fa-solid fa-copy"></i>Copy
+              </button>
+              <button
+                class="call-btn w-1/2 btn btn-xl rounded-xl text-white bg-green-400"
+              >
+                <i class="fa-solid fa-phone call-btn"></i>Call
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="col-span-3 border-2 border-green-600 bg-white p-3">
+          <div class="flex justify-between  ">
+            <h1 class="font-bold"><i class="fa-regular fa-clock"></i> Call History</h1>
+          <button id="btn-clear" class="btn bg-green-500 rounded-[50px]">Clear</button>
+          </div>
+          <div id="history-container">
+            
+
+          </div>
+         
+        </section>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
