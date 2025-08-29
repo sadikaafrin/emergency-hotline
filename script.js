@@ -15,20 +15,7 @@ getElement("all-box").addEventListener("click", function (e) {
     const card = copyBtn.closest(".bg-base-100"); // The card container
     const textToCopy = card.querySelector(".text-to-copy").innerText;
 
-    // Copy to clipboard
-    navigator.clipboard.writeText(textToCopy)
-      .then(() => {
-        alert(`Copied: ${textToCopy}`);
-        const quantityCopy = getElement("copy-btn")?.innerText || "0";
-        const currentCopyNumber = Number(quantityCopy) + 1;
-        if (getElement("copy-btn")) {
-          getElement("copy-btn").innerText = currentCopyNumber;
-        }
-      })
-      .catch(err => {
-        console.error("Failed to copy: ", err);
-      });
-  }
+   
   if (e.target.className.includes("call-btn")) {
     const btn = e.target;
     const cardName =
